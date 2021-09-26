@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto">
-
+        <activity
+            android:name=".Registroxd"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Registro"
+            android:exported="true" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true" />
         <activity
             android:name=".Logeo"
             android:exported="true"
