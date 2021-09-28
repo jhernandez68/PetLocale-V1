@@ -5,6 +5,9 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:title="Funciones en Versión 2"
+            />
+        <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_sharp_home_24"
             android:title="Menu" />
@@ -16,5 +19,14 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_baseline_star_24"
             android:title="Destacados" />
+
+        <item
+            android:id="dudas"
+            android:icon="@drawable/ic_baseline_star_24"
+            android:title="Dudas frecuentes" />
+
+        <item
+            android:title="Cerrar Sesión"
+            />
     </group>
 </menu>

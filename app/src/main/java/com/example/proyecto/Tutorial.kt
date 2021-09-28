@@ -10,6 +10,7 @@ class Tutorial : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tutorial)
 
+
         val intent = Intent(this, MainActivity::class.java)
         continuar.setOnClickListener(){
                 startActivity(intent)

@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto">
         <activity
+            android:name=".MostrarProducto"
+            android:exported="true"
+            android:theme="@style/Theme.Proyecto.NoActionBar"
+            />
+        <activity
+            android:name=".Productos"
+            android:exported="true"
+            />
+        <activity
             android:name=".Registroxd"
-            android:exported="true" />
-        <activity
-            android:name=".ui.Registro"
-            android:exported="true" />
-        <activity
-            android:name=".ui.MainActivity"
             android:exported="true" />
         <activity
             android:name=".Logeo"
@@ -25,7 +28,6 @@
             android:theme="@style/Theme.Proyecto.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
