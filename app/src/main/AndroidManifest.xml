@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"
+            >
+        </meta-data>
+        <activity
+            android:name=".Googlemaps"
+            android:exported="true" />
         <activity
             android:name=".FBListView"
             android:exported="true" />
@@ -29,6 +37,7 @@
             android:theme="@style/Theme.Proyecto.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
