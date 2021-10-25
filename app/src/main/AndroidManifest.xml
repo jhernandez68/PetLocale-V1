@@ -10,14 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto">
         <activity
+            android:name=".FBListView"
+            android:exported="true" />
+        <activity
             android:name=".MostrarProducto"
             android:exported="true"
-            android:theme="@style/Theme.Proyecto.NoActionBar"
-            />
+            android:theme="@style/Theme.Proyecto.NoActionBar" />
         <activity
             android:name=".Productos"
-            android:exported="true"
-            />
+            android:exported="true" />
         <activity
             android:name=".Registroxd"
             android:exported="true" />
@@ -58,6 +59,7 @@
             android:theme="@style/Theme.Proyecto.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

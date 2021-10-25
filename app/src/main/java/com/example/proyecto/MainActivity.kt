@@ -57,6 +57,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val intent2 = Intent(this, FBListView::class.java)
+
+        button2.setOnClickListener{
+            startActivity(intent2)
+        }
 
     }
 
