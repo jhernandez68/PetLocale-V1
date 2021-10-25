@@ -21,7 +21,7 @@
             android:title="Destacados" />
 
         <item
-            android:id="dudas"
+            android:id="@+id/dudas"
             android:icon="@drawable/ic_baseline_star_24"
             android:title="Dudas frecuentes" />
 

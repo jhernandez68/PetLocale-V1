@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "815634184497",
+    "project_id": "petlocale",
+    "storage_bucket": "petlocale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815634184497:android:c75df471acb1ed941f9810",
+        "android_client_info": {
+          "package_name": "com.example.proyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815634184497-lljkqgalcgud8ovmcn2mt414vbrn7rk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpwQgU_1SDsOYJUE1o39UMIRChXbV7JPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815634184497-lljkqgalcgud8ovmcn2mt414vbrn7rk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
