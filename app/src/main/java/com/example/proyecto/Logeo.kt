@@ -12,6 +12,12 @@ class Logeo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_logeo)
+
+        val registroIntent = Intent(this,Registroxd::class.java)
+        textView3.setOnClickListener{
+            startActivity(registroIntent)
+        }
+
         entrar.setOnClickListener{
             if(password.text.isNotEmpty() && password.text.isNotEmpty() && username.text.isNotEmpty()){
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(username.text.toString()
