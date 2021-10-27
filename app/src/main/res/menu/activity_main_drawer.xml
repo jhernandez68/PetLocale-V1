@@ -5,7 +5,7 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:title="Funciones en Versión 2"
+            android:title="Funciones en Versión 3"
             />
         <item
             android:id="@+id/nav_home"
