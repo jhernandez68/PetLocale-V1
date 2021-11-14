@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MostrarProducto">
+    tools:context=".MostrarServicios">
 
 
     <TextView
-        android:id="@+id/nombre_producto"
+        android:id="@+id/nombre_servicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="332dp"
         android:text="TextView"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/detalles"
+        app:layout_constraintBottom_toTopOf="@+id/detallesservicio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,20 +22,20 @@
         app:layout_constraintVertical_bias="0.106" />
 
     <TextView
-        android:id="@+id/precioproducto"
+        android:id="@+id/precioservicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="precio"
         android:textColor="#00FF0C"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/detalles"
+        app:layout_constraintBottom_toTopOf="@+id/detallesservicio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_producto" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre_servicio" />
 
     <TextView
-        android:id="@+id/detalles"
+        android:id="@+id/detallesservicio"
         android:layout_width="268dp"
         android:layout_height="161dp"
         android:text="TextView"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.773" />
 
     <ImageView
-        android:id="@+id/imagenxd"
+        android:id="@+id/imagenxdService"
         android:layout_width="200dp"
         android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,7 +67,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detalles" />
+        app:layout_constraintTop_toBottomOf="@+id/detallesservicio" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

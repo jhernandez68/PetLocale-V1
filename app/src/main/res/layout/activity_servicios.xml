@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Productos">
+    tools:context=".Servicios">
 
     <EditText
-        android:id="@+id/etSearch"
+        android:id="@+id/etSearchService"
         android:layout_width="331dp"
         android:layout_height="72dp"
         android:ems="10"
-        android:hint="Busca aqui el producto"
+        android:hint="Busca aqui el Servicio"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/lista"
+        app:layout_constraintBottom_toTopOf="@+id/listaService"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.286" />
 
     <ListView
-        android:id="@+id/lista"
+        android:id="@+id/listaService"
         android:layout_width="358dp"
         android:layout_height="599dp"
         android:layout_marginStart="1dp"

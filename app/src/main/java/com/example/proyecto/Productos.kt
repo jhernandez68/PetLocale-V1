@@ -3,6 +3,8 @@ package com.example.proyecto
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import kotlinx.android.synthetic.main.activity_productos.*
 
 class Productos : AppCompatActivity() {
@@ -20,10 +22,15 @@ class Productos : AppCompatActivity() {
         val producto8 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
         val producto9 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
         val producto10 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-
         val listaProductos = listOf(producto, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10)
 
+        var nombresproductosxd: ArrayList<String> = ArrayList()
+        nombresproductosxd.add("Comida para perro")
+        nombresproductosxd.add("Disponible pronto!")
+
+
         val adapter = ProductosAdapter(this, listaProductos)
+
         lista.adapter = adapter
 
         lista.setOnItemClickListener { adapterView, view, i, l ->
@@ -32,6 +39,15 @@ class Productos : AppCompatActivity() {
             intent.putExtra("producto", listaProductos[i])
             startActivity(intent)
         }
+
+
+        etSearch.addTextChangedListener( object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                adapter!!.filter.filter(s)
+            }
+            override fun afterTextChanged(s: Editable?) {}
+        })
 
 
     }

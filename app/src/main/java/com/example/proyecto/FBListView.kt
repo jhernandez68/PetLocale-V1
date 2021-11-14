@@ -11,6 +11,7 @@ import java.io.File
 class FBListView : AppCompatActivity() {
 
     lateinit var binding : ActivityFblistViewBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFblistViewBinding.inflate(layoutInflater)

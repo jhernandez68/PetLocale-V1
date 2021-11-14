@@ -11,7 +11,7 @@ class Tutorial : AppCompatActivity() {
         setContentView(R.layout.activity_tutorial)
 
 
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, Logeo::class.java)
         continuar.setOnClickListener(){
                 startActivity(intent)
 

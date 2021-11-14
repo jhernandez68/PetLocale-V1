@@ -3,6 +3,8 @@ package com.example.proyecto
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import kotlinx.android.synthetic.main.activity_mostrar_producto.*
 import kotlinx.android.synthetic.main.content_main.*
 

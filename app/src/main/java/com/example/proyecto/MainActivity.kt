@@ -47,6 +47,9 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         val intent = Intent(this, Productos::class.java)
+
+        val intentService = Intent(this, Servicios::class.java)
+
         imageView3.setOnClickListener(){
             startActivity(intent)
         }
@@ -54,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         imageView2.setOnClickListener(){
-            startActivity(intent)
+            startActivity(intentService)
         }
 
         val intent2 = Intent(this, FBListView::class.java)
