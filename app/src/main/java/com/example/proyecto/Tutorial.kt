@@ -7,6 +7,8 @@ import kotlinx.android.synthetic.main.activity_tutorial.*
 
 class Tutorial : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        setTheme(R.style.SplashTeme)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tutorial)
 

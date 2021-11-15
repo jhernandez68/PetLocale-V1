@@ -19,6 +19,10 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="SplashTeme" parent="Theme.Proyecto">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
     <style name="Theme.Proyecto.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Proyecto.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

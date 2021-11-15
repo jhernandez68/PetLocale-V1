@@ -59,7 +59,7 @@
         <activity
             android:name=".Tutorial"
             android:exported="true"
-            android:theme="@style/Theme.Proyecto.NoActionBar">
+            android:theme="@style/SplashTeme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
