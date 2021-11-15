@@ -50,11 +50,13 @@ class MainActivity : AppCompatActivity() {
 
         val intentService = Intent(this, Servicios::class.java)
 
+        val intentVet = Intent(this, Veterinariasxde::class.java)
+
         imageView3.setOnClickListener(){
             startActivity(intent)
         }
         imageView4.setOnClickListener(){
-            startActivity(intent)
+            startActivity(intentVet)
         }
         imageView2.setOnClickListener(){
             startActivity(intentService)
