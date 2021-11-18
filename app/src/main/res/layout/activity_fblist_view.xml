@@ -28,10 +28,10 @@
         android:hint="Escribe el nombre de la veterinaria"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintHorizontal_bias="0.598"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:layout_constraintVertical_bias="0.473" />
+        app:layout_constraintVertical_bias="0.535" />
 
     <Button
         android:id="@+id/buscar"
@@ -46,15 +46,15 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="263dp"
+        android:layout_height="41dp"
         android:text="Dirección"
         app:layout_constraintBottom_toTopOf="@+id/editTextxd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toEndOf="@+id/DireccionFBxd"
         app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintVertical_bias="0.143" />
 
     <TextView
         android:id="@+id/textView5"
@@ -63,10 +63,10 @@
         android:text="Telefono"
         app:layout_constraintBottom_toTopOf="@+id/editTextxd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toEndOf="@+id/TelefonoFBxd"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/textView6"
@@ -75,8 +75,49 @@
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/editTextxd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.036"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toEndOf="@+id/HorarioFBxd"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.594" />
+        app:layout_constraintVertical_bias="0.476" />
+
+    <TextView
+        android:id="@+id/DireccionFBxd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección"
+        android:textColor="#7B1FA2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextxd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/TelefonoFBxd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono"
+        android:textColor="#7B1FA2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextxd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DireccionFBxd"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/HorarioFBxd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horario"
+        android:textColor="#7B1FA2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextxd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TelefonoFBxd" />
 </androidx.constraintlayout.widget.ConstraintLayout>

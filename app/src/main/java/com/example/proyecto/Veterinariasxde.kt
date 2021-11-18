@@ -1,4 +1,5 @@
 package com.example.proyecto
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -23,7 +24,16 @@ class Veterinariasxde : AppCompatActivity() {
                 veterinaria.setText(it.get("Nombre") as String?)
                 veterinaria2.setText(it.get("Nombre2") as String?)
                 Veterinaria.setText(it.get("Nombre3") as String?)
-
             }
+        val intentP = Intent(this, Googlemaps::class.java)
+        val intentP2 = Intent(this, VeterinariasSearch::class.java)
+        Location.setOnClickListener{
+            startActivity(intentP)
+        }
+
+        listbutton.setOnClickListener{
+            startActivity(intentP2)
+        }
+
     }
 }

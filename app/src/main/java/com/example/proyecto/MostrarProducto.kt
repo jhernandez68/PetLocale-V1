@@ -16,11 +16,11 @@ class MostrarProducto : AppCompatActivity() {
         val producto = intent.getSerializableExtra("producto") as Producto
 
         nombre_producto.text = producto.nombre
-        precioproducto.text = "$${producto.precio}"
+        precioproducto.text = "#" + producto.precio.toString() + " Productos."
         detalles.text = producto.descripcion
         imagenxd.setImageResource(producto.imagen)
 
-        val intentP = Intent(this, Googlemaps::class.java)
+        val intentP = Intent(this, ProductoBusquedaFB::class.java)
         button.setOnClickListener{
             startActivity(intentP)
         }

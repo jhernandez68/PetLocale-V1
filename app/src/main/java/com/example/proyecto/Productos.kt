@@ -15,16 +15,17 @@ class Productos : AppCompatActivity() {
 
         val db = FirebaseFirestore.getInstance()
 
-        val producto = Producto("Comida para perro", 100000.0,"Dog Chow, para perros de 7 años o más", R.drawable.iconproducto1 )
-        val producto2 = Producto("Comida para perro", 100000.0,"Dog Chow, para perros de 7 años o más", R.drawable.iconproducto1 )
-        val producto3 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val producto4 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val producto5 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val producto6 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val producto7 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val producto8 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val producto9 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val producto10 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
+        val producto = Producto("Productos VetVet", 10.0,"La veterinaria VetVet cuenta actualmente con una cantidad de 10 productos ofrecidos, como lo son:" +
+                "DogShow", R.drawable.iconvetvet )
+        val producto2 = Producto("Productos PetShop", 12.0,"", R.drawable.iconproducto1 )
+        val producto3 = Producto ("Productos Kanicats", 15.0, "",R.drawable.ic_menu_gallery)
+        val producto4 = Producto ("Productos X Veterinaria", 0.0, "",R.drawable.ic_menu_gallery)
+        val producto5 = Producto ("Produtos Veterinaria 2", 1.0, "",R.drawable.ic_menu_gallery)
+        val producto6 = Producto ("Produtos Veterinaria 3", 2.0, "",R.drawable.ic_menu_gallery)
+        val producto7 = Producto ("Produtos Veterinaria 4", 3.0, "",R.drawable.ic_menu_gallery)
+        val producto8 = Producto ("Produtos Veterinaria 5", 4.0, "",R.drawable.ic_menu_gallery)
+        val producto9 = Producto ("Produtos Veterinaria 6", 5.0, "",R.drawable.ic_menu_gallery)
+        val producto10 = Producto ("Produtos Veterinaria 7", 0.0, "",R.drawable.ic_menu_gallery)
         val listaProductos = listOf(producto, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10)
 
         val adapter = ProductosAdapter(this, listaProductos)

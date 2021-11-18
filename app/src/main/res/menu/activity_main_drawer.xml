@@ -5,28 +5,28 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:title="Funciones en Versión 3"
+            android:title=" P E T L O C A L E"
             />
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_sharp_home_24"
-            android:title="Menu" />
+            android:title="M E N Ú" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_baseline_history_24"
-            android:title="Historial" />
+            android:title="H I S T O R I A L" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_baseline_star_24"
-            android:title="Destacados" />
+            android:title="D E S T A C A D O S" />
 
         <item
             android:id="@+id/dudas"
             android:icon="@drawable/ic_baseline_star_24"
-            android:title="Dudas frecuentes" />
+            android:title="D U D A S  F R E C U E N T E S" />
 
         <item
-            android:title="Cerrar Sesión"
+            android:title="C E R R A R  S E S I Ó N"
             />
     </group>
 </menu>

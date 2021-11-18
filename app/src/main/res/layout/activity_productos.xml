@@ -11,7 +11,7 @@
         android:layout_width="331dp"
         android:layout_height="72dp"
         android:ems="10"
-        android:hint="Busca aqui el producto"
+        android:hint="Busca aqui la veterinaria"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/lista"
         app:layout_constraintEnd_toEndOf="parent"
