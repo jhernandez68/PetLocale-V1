@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_productos.*
 
 class Productos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_productos)
+
+        val db = FirebaseFirestore.getInstance()
 
         val producto = Producto("Comida para perro", 100000.0,"Dog Chow, para perros de 7 años o más", R.drawable.iconproducto1 )
         val producto2 = Producto("Comida para perro", 100000.0,"Dog Chow, para perros de 7 años o más", R.drawable.iconproducto1 )
@@ -23,11 +26,6 @@ class Productos : AppCompatActivity() {
         val producto9 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
         val producto10 = Producto ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
         val listaProductos = listOf(producto, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10)
-
-        var nombresproductosxd: ArrayList<String> = ArrayList()
-        nombresproductosxd.add("Comida para perro")
-        nombresproductosxd.add("Disponible pronto!")
-
 
         val adapter = ProductosAdapter(this, listaProductos)
 

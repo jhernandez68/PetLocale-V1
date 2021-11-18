@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.proyecto.databinding.ActivityFblistViewBinding
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
+import kotlinx.android.synthetic.main.activity_fblist_view.*
 import java.io.File
 
 class FBListView : AppCompatActivity() {
 
     lateinit var binding : ActivityFblistViewBinding
+    private val db = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +30,25 @@ class FBListView : AppCompatActivity() {
 
                 val bitmap = BitmapFactory.decodeFile(localfile.absolutePath)
                 binding.imageView9.setImageBitmap(bitmap)
+
+                db.collection("Veterinarias").document("VetVet").get().addOnSuccessListener {
+                    textView4.setText(it.get("direccion") as String?)
+                    textView5.setText(it.get("Telefono") as String?)
+                    textView6.setText(it.get("Horario") as String?)
+                }
+
+                db.collection("Veterinarias").document("Kanicat").get().addOnSuccessListener {
+                    textView4.setText(it.get("direccion") as String?)
+                    textView5.setText(it.get("Telefono") as String?)
+                    textView6.setText(it.get("Horario") as String?)
+                }
+
+                db.collection("Veterinarias").document("VetVet").get().addOnSuccessListener {
+                    textView4.setText(it.get("direccion") as String?)
+                    textView5.setText(it.get("Telefono") as String?)
+                    textView6.setText(it.get("Horario") as String?)
+                }
+
             }.addOnFailureListener{
                 Toast.makeText(this,"No se encontró la Veterinaria", Toast.LENGTH_SHORT).show()
                  }
