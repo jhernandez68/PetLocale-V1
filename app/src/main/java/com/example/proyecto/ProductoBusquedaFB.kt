@@ -3,6 +3,7 @@ package com.example.proyecto
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.proyecto.databinding.ActivityProductoBusquedaFbBinding
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
@@ -38,6 +39,8 @@ class ProductoBusquedaFB : AppCompatActivity() {
                     textView6PBFB.setText(it.get("Cantidad") as String?)
 
                 }
+            }.addOnFailureListener{
+                Toast.makeText(this,"No se encontró el producto", Toast.LENGTH_SHORT).show()
             }
         }
     }

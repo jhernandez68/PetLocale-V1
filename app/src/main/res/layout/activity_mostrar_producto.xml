@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/precioproducto"
@@ -36,16 +36,16 @@
 
     <TextView
         android:id="@+id/detalles"
-        android:layout_width="268dp"
-        android:layout_height="161dp"
+        android:layout_width="277dp"
+        android:layout_height="165dp"
         android:text="TextView"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.773" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <ImageView
         android:id="@+id/imagenxd"
@@ -53,10 +53,10 @@
         android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235"
+        app:layout_constraintVertical_bias="0.114"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
@@ -66,8 +66,22 @@
         android:text="BUSCAR PRODUCTO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detalles" />
+        app:layout_constraintTop_toBottomOf="@+id/detalles"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <Button
+        android:id="@+id/resButton"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:text="Dejar reseña"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detalles"
+        app:layout_constraintVertical_bias="0.544" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
