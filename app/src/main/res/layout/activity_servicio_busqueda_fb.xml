@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ProductoBusquedaFB">
+    tools:context=".ServicioBusquedaFB">
 
 
     <ImageView
-        android:id="@+id/imageView9PBFB"
+        android:id="@+id/imageView9SFB"
         android:layout_width="375dp"
         android:layout_height="299dp"
         android:layout_weight="1"
@@ -21,106 +21,103 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
-        android:id="@+id/editTextxdPBFB"
+        android:id="@+id/editTextxdSFB"
         android:layout_width="309dp"
         android:layout_height="42dp"
         android:layout_weight="1"
-        android:hint="Escribe el nombre del Producto"
+        android:hint="Escribe el nombre del Servicio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9PBFB"
-        app:layout_constraintVertical_bias="0.577" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView9SFB"
+        app:layout_constraintVertical_bias="0.553" />
 
     <Button
-        android:id="@+id/buscarPBFB"
+        android:id="@+id/buscarSFB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buscar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextxdPBFB"
+        app:layout_constraintTop_toBottomOf="@+id/editTextxdSFB"
         app:layout_constraintVertical_bias="0.079" />
 
     <TextView
-        android:id="@+id/textView4PBFB"
+        android:id="@+id/textView4SFB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dirección"
-        app:layout_constraintBottom_toTopOf="@+id/editTextxdPBFB"
+        app:layout_constraintBottom_toTopOf="@+id/editTextxdSFB"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9PBFB"
-        app:layout_constraintVertical_bias="0.224" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView9SFB"
+        app:layout_constraintVertical_bias="0.265" />
 
     <TextView
-        android:id="@+id/textView5PBFB"
+        android:id="@+id/textView5SFB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Telefono"
-        app:layout_constraintBottom_toTopOf="@+id/editTextxdPBFB"
+        android:text="Costo"
+        app:layout_constraintBottom_toTopOf="@+id/editTextxdSFB"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4PBFB"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4SFB"
+        app:layout_constraintVertical_bias="0.203" />
 
     <TextView
-        android:id="@+id/textView6PBFB"
-        android:layout_width="151dp"
-        android:layout_height="28dp"
+        android:id="@+id/textView6SFB"
+        android:layout_width="206dp"
+        android:layout_height="22dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/editTextxdPBFB"
+        app:layout_constraintBottom_toTopOf="@+id/editTextxdSFB"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5PBFB"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5SFB"
+        app:layout_constraintVertical_bias="0.133" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textView7SFB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Nombre Veterinaria"
         android:textColor="#7B1FA2"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toStartOf="@+id/textView4PBFB"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintBottom_toTopOf="@+id/textView8SFB"
+        app:layout_constraintEnd_toStartOf="@+id/textView4SFB"
+        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9PBFB"
-        app:layout_constraintVertical_bias="0.275" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Costo x Unidad:"
-        android:textColor="#7B1FA2"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintEnd_toStartOf="@+id/textView5PBFB"
-        app:layout_constraintHorizontal_bias="0.642"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9PBFB"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9SFB"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView8SFB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Costo:"
+        android:textColor="#7B1FA2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9SFB"
+        app:layout_constraintEnd_toStartOf="@+id/textView5SFB"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9SFB" />
+
+    <TextView
+        android:id="@+id/textView9SFB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cantidad actual:"
         android:textColor="#7B1FA2"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView6PBFB"
-        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintEnd_toStartOf="@+id/textView6SFB"
+        app:layout_constraintHorizontal_bias="0.704"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9PBFB"
-        app:layout_constraintVertical_bias="0.344" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView9SFB"
+        app:layout_constraintVertical_bias="0.313" />
 </androidx.constraintlayout.widget.ConstraintLayout>

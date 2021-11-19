@@ -14,16 +14,12 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_baseline_history_24"
-            android:title="H I S T O R I A L" />
+            android:title="C A M B I O S" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_baseline_star_24"
-            android:title="D E S T A C A D O S" />
-
-        <item
-            android:id="@+id/dudas"
-            android:icon="@drawable/ic_baseline_star_24"
             android:title="D U D A S  F R E C U E N T E S" />
+
 
         <item
             android:title="C E R R A R  S E S I Ó N"

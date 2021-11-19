@@ -17,8 +17,8 @@ class Productos : AppCompatActivity() {
 
         val producto = Producto("Productos VetVet", 10.0,"La veterinaria VetVet cuenta actualmente con una cantidad de 10 productos ofrecidos, como lo son:" +
                 "DogShow", R.drawable.iconvetvet )
-        val producto2 = Producto("Productos PetShop", 12.0,"", R.drawable.iconproducto1 )
-        val producto3 = Producto ("Productos Kanicats", 15.0, "",R.drawable.ic_menu_gallery)
+        val producto2 = Producto("Productos PetShop", 12.0,"", R.drawable.iconpetshop )
+        val producto3 = Producto ("Productos Kanicats", 15.0, "",R.drawable.iconkanicat)
         val producto4 = Producto ("Productos X Veterinaria", 0.0, "",R.drawable.ic_menu_gallery)
         val producto5 = Producto ("Produtos Veterinaria 2", 1.0, "",R.drawable.ic_menu_gallery)
         val producto6 = Producto ("Produtos Veterinaria 3", 2.0, "",R.drawable.ic_menu_gallery)
@@ -38,16 +38,6 @@ class Productos : AppCompatActivity() {
             intent.putExtra("producto", listaProductos[i])
             startActivity(intent)
         }
-
-
-        etSearch.addTextChangedListener( object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                adapter!!.filter.filter(s)
-            }
-            override fun afterTextChanged(s: Editable?) {}
-        })
-
 
     }
 

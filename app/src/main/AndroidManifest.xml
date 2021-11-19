@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto">
         <activity
+            android:name=".ubicacionreal"
+            android:exported="true" />
+        <activity
+            android:name=".ServicioBusquedaFB"
+            android:exported="true" />
+        <activity
+            android:name=".reseniasService"
+            android:exported="true" />
+        <activity
             android:name=".resenias"
             android:exported="true" />
         <activity

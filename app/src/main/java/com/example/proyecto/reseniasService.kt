@@ -1,13 +1,14 @@
 package com.example.proyecto
 
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.activity_resenias.*
+import kotlinx.android.synthetic.main.activity_resenias_service.*
 
-class resenias : AppCompatActivity() {
+class reseniasService : AppCompatActivity() {
 
     private val db = FirebaseFirestore.getInstance()
 
@@ -16,14 +17,14 @@ class resenias : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_resenias)
+        setContentView(R.layout.activity_resenias_service)
 
         var count : Int
 
     }
 
     fun guess (view: View){
-        val enteredNumber = calText?.text.toString().toInt()
+        val enteredNumber = calTextService?.text.toString().toInt()
         when {
             enteredNumber > limitS -> {
                 Toast.makeText(this, "Fuera de rango", Toast.LENGTH_LONG).show()
@@ -32,13 +33,13 @@ class resenias : AppCompatActivity() {
                 Toast.makeText(this, "Fuera de rango", Toast.LENGTH_LONG).show()
             }
             else -> {
-                sendButton.setOnClickListener{
-                    db.collection("Veterinarias").document("Reseñas").collection("Reseñas").document("ReseñasProducto").set(
+                sendButtonService.setOnClickListener{
+                    db.collection("Veterinarias").document("Reseñas").collection("Reseñas").document("ReseñasServicios").set(
                         hashMapOf(
-                            "Reseña" to reseniaText.text.toString(),
-                            "Calificación" to calText.text.toString().toInt(),
+                            "Reseña" to reseniaTextService.text.toString(),
+                            "Calificación" to calTextService.text.toString().toInt(),
                             "Veterinaria" to "VetVet",
-                            "Tipo" to "Productos"
+                            "Tipo" to "Servicios"
                         )
                     )
                     Toast.makeText(this, "Comentario Enviado", Toast.LENGTH_LONG).show()

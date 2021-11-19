@@ -3,9 +3,6 @@ package com.example.proyecto
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_mostrar_producto.*
-import kotlinx.android.synthetic.main.activity_mostrar_producto.button
-import kotlinx.android.synthetic.main.activity_mostrar_producto.imagenxd
 import kotlinx.android.synthetic.main.activity_mostrar_servicios.*
 
 class MostrarServicios : AppCompatActivity() {
@@ -16,14 +13,22 @@ class MostrarServicios : AppCompatActivity() {
         val servicio = intent.getSerializableExtra("servicio") as Servicio
 
         nombre_servicio.text = servicio.nombre
-        precioservicio.text = "$${servicio.precio}"
+        precioservicio.text = "#" +servicio.precio
         detallesservicio.text = servicio.descripcion
         imagenxdService.setImageResource(servicio.imagen)
 
-        val intentP = Intent(this, Googlemaps::class.java)
-        button.setOnClickListener{
+        val intentP = Intent(this, ServicioBusquedaFB::class.java)
+        val intentP2 = Intent(this, reseniasService::class.java)
+
+        buttonService.setOnClickListener{
             startActivity(intentP)
         }
+
+        resButtonService.setOnClickListener{
+            startActivity(intentP2)
+        }
+
+
 
     }
 }

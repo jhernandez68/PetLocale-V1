@@ -26,7 +26,10 @@
         <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_registro.xml" value="0.16983695652173914" />
         <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_registroxd.xml" value="0.16983695652173914" />
         <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_resenias.xml" value="0.33" />
+        <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_resenias_service.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_servicio_busqueda_fb.xml" value="0.33" />
         <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_servicios.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_servicios_adapter.xml" value="0.17980072463768115" />
         <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_tutorial.xml" value="0.25" />
         <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_veterinarias_fire_base.xml" value="0.1" />
         <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_veterinarias_search.xml" value="0.19429347826086957" />
@@ -43,7 +46,7 @@
         <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
         <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/layout/start.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
-        <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/menu/main.xml" value="0.8060344827586207" />
+        <entry key="..\:/Users/57318/AndroidStudioProjects/Proyecto/app/src/main/res/menu/main.xml" value="0.6371490280777538" />
       </map>
     </option>
   </component>

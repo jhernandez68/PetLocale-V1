@@ -4,6 +4,7 @@ import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.core.view.isInvisible
 import com.example.proyecto.databinding.ActivityFblistViewBinding
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
@@ -20,7 +21,22 @@ class FBListView : AppCompatActivity() {
         binding = ActivityFblistViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        DireccionFBxd.isInvisible = true
+        TelefonoFBxd.isInvisible = true
+        HorarioFBxd.isInvisible = true
+        textView4.isInvisible = true
+        textView5.isInvisible = true
+        textView6.isInvisible = true
+
         binding.buscar.setOnClickListener {
+
+
+            DireccionFBxd.isInvisible = false
+            TelefonoFBxd.isInvisible = false
+            HorarioFBxd.isInvisible = false
+            textView4.isInvisible = false
+            textView5.isInvisible = false
+            textView6.isInvisible = false
             
             val imageName = binding.editTextxd.text.toString()
             val storageRef = FirebaseStorage.getInstance().reference.child("Images/$imageName.jpg")

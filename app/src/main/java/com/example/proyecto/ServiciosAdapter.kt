@@ -15,7 +15,7 @@ class ServiciosAdapter(private val mContext: Context, private val listaServicios
         val servicio = listaServicios[position]
 
         layout.nombreService.text = servicio.nombre
-        layout.precioService.text = "$${servicio.precio}"
+        layout.precioService.text = "#" + servicio.precio + "Servicios"
         layout.imageViewService.setImageResource(servicio.imagen)
 
         return layout

@@ -60,14 +60,25 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BUSCAR EN MAPA"
+        android:text="BUSCAR Servicio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/resButtonService"
         app:layout_constraintTop_toBottomOf="@+id/detallesservicio" />
+
+    <Button
+        android:id="@+id/resButtonService"
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="36dp"
+        android:text="Dejar reseña"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detallesservicio"
+        app:layout_constraintVertical_bias="0.493" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

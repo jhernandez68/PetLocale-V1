@@ -13,18 +13,11 @@ class Servicios : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_servicios)
 
-        val servicio = Servicio("Baño para perro", 300000.0,"Dog Chow, para perros de 7 años o más", R.drawable.icondog )
-        val servicio2 = Servicio("Baño para gato", 150000.0,"Dog Chow, para perros de 7 años o más", R.drawable.catbanio )
-        val servicio3 = Servicio ("Consulta", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.consulta)
-        val servicio4 = Servicio ("Radiografia para perro", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.iconradio)
-        val servicio5 = Servicio ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val servicio6 = Servicio ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val servicio7 = Servicio ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val servicio8 = Servicio ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val servicio9 = Servicio ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
-        val servicio10 = Servicio ("Disponible pronto!", 0.0, "Servicio | Producto | Veterinaria disponible pronto!",R.drawable.ic_menu_gallery)
+        val servicio = Servicio("Servicios VetVet", 12.0,"Kanicat Actualmente cuenta con 12 Servicios, entre ellos: Baño (para perros y/o gatos)", R.drawable.iconvetvet )
+        val servicio2 = Servicio("Servicios PetShop", 10.0,"PetShop cuenta actualmente con:", R.drawable.iconpetshop)
+        val servicio3 = Servicio ("Servicios Kanicat", 0.0, "Kanicat cuenta actualmente con:",R.drawable.iconkanicat)
 
-        val listaServicios = listOf(servicio, servicio2, servicio3, servicio4, servicio5, servicio6, servicio7, servicio8, servicio9, servicio10)
+        val listaServicios = listOf(servicio, servicio2, servicio3)
 
         val adapter = ServiciosAdapter(this, listaServicios)
 
@@ -36,15 +29,6 @@ class Servicios : AppCompatActivity() {
             intent.putExtra("servicio", listaServicios[i])
             startActivity(intent)
         }
-
-
-        etSearchService.addTextChangedListener( object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                adapter!!.filter.filter(s)
-            }
-            override fun afterTextChanged(s: Editable?) {}
-        })
 
 
     }

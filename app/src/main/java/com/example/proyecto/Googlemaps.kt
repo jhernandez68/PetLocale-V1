@@ -30,7 +30,7 @@ class Googlemaps : AppCompatActivity(), OnMapReadyCallback {
 
     private fun createMarker(){
         val coordinates = com.google.android.gms.maps.model.LatLng(4.630608, -74.190660)
-        val marker = MarkerOptions().position(coordinates).title("API google maps")
+        val marker = MarkerOptions().position(coordinates).title("VetVet")
         map.addMarker(marker)
         map.animateCamera(
             CameraUpdateFactory.newLatLngZoom(coordinates,18f), 4000, null
