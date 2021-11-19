@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
 
         val intentVet = Intent(this, Veterinariasxde::class.java)
 
+        val intentMaps = Intent(this, Googlemaps::class.java)
+
         imageView3.setOnClickListener(){
             startActivity(intent)
         }
@@ -60,6 +62,10 @@ class MainActivity : AppCompatActivity() {
         }
         imageView2.setOnClickListener(){
             startActivity(intentService)
+        }
+
+        emergencia.setOnClickListener(){
+            startActivity(intentMaps)
         }
 
         val intent2 = Intent(this, FBListView::class.java)

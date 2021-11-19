@@ -22,13 +22,17 @@ class Veterinariasxde : AppCompatActivity() {
 
             db.collection("Lista").document("Veterinarias").get().addOnSuccessListener {
                 veterinaria.setText(it.get("Nombre") as String?)
-                veterinaria2.setText(it.get("Nombre2") as String?)
                 Veterinaria.setText(it.get("Nombre3") as String?)
             }
-        val intentP = Intent(this, Googlemaps::class.java)
+        val intentP = Intent(this, ubicacionreal::class.java)
+        val intentU = Intent (this, Ubicacion::class.java)
         val intentP2 = Intent(this, VeterinariasSearch::class.java)
         Location.setOnClickListener{
             startActivity(intentP)
+        }
+
+        location.setOnClickListener{
+            startActivity(intentU)
         }
 
         listbutton.setOnClickListener{

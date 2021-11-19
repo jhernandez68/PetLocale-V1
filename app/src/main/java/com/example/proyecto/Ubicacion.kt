@@ -7,33 +7,32 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.MarkerOptions
-import kotlinx.android.synthetic.main.activity_ubicacionreal.*
 
-class ubicacionreal : AppCompatActivity() , OnMapReadyCallback {
+private lateinit var map3: GoogleMap
 
-    private lateinit var map2:GoogleMap
+class Ubicacion : AppCompatActivity() , OnMapReadyCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ubicacionreal)
+        setContentView(R.layout.activity_ubicacion)
         createFragment()
     }
 
     private fun createFragment(){
-        val mapFragment = supportFragmentManager.findFragmentById(R.id.map2) as SupportMapFragment
+        val mapFragment = supportFragmentManager.findFragmentById(R.id.map3) as SupportMapFragment
         mapFragment.getMapAsync(this)
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
-        map2 = googleMap
-        createMarker(4.630608, -74.190660, "VetVet")
+        map3 = googleMap
+        createMarker(4.694698, -74.055356, "Kanicat")
     }
 
     private fun createMarker(latitud: Double, longitud: Double , nombre: String){
         val coordinates = com.google.android.gms.maps.model.LatLng(latitud, longitud)
         val marker = MarkerOptions().position(coordinates).title(nombre)
-        map2.addMarker(marker)
-        map2.animateCamera(
+        map3.addMarker(marker)
+        map3.animateCamera(
             CameraUpdateFactory.newLatLngZoom(coordinates,18f), 4000, null
         )
     }
