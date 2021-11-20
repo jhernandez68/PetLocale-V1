@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_logeo.*
 import kotlinx.android.synthetic.main.activity_registroxd.*
 
 class Registroxd : AppCompatActivity() {
@@ -15,7 +14,7 @@ class Registroxd : AppCompatActivity() {
         setContentView(R.layout.activity_registroxd)
 
         registrarse.setOnClickListener{
-            if(password.text.isEmpty() || password.text.isEmpty()){
+            if(editTextTextPassword.text.isEmpty() || editTextTextEmailAddress.text.isEmpty()){
                 Toast.makeText(this, "Rellena todos los campos!", Toast.LENGTH_LONG).show()
             }
 
